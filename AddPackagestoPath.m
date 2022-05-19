@@ -10,7 +10,9 @@ function AddPackagestoPath
 
 % define package names
 pkg_names = {'hatchfill2_r8','legendflex-pkg-master','export_fig',...
-    'linspecer','MIMT','tdms','Windows_API','grabit'};
+    'linspecer','MIMT','tdms','Windows_API','grabit','chebfun-master',...
+    'igesToolbox','mtimesx_20110223','panel-2.14','PolyfitnTools',...
+    'Professional Plots','VariablePrecisionIntegers'};
 
 % get home directory path
 [home_dir,~,~] = fileparts(mfilename('fullpath'));
