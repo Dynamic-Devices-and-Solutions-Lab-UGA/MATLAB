@@ -1,0 +1,9 @@
+/.ignore
+.DS_store
+*.txt
+*.asv
+*~
+*.mex*
+
+!folder/
+folder/*
