@@ -1,9 +1,15 @@
 /.ignore
+
 .DS_store
+
+# ignore all text files
 *.txt
+
+# ignore autosave files
 *.asv
 *~
+
+# ignore mex compiled binaries
 *.mex*
 
-!folder/
-folder/*
+/*/

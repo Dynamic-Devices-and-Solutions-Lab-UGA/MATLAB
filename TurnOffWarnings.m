@@ -1,5 +1,13 @@
-% http://www.mathworks.com/help/matlab/matlab_prog/suppress-warnings.html
 function TurnOffWarnings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Turn off undesired warnings during startup
+%
+% Author: Dani Agramonte
+% Last Updated: 05.18.22
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 	try
 		% To set the warning state, you must first know the message identifier for the one warning you want to enable. 
 		% Query the last warning to acquire the identifier.  For example: 
