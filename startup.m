@@ -10,5 +10,8 @@
 % Turn off unneccessary warnings
 TurnOffWarnings;
 
+% mex setup
+MEX_Setup;
+
 % Add useful packages to path
 AddPackagestoPath;
