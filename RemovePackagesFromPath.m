@@ -8,15 +8,16 @@ function RemovePackagesFromPath
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% define package names
-pkg_names = {'hatchfill2_r8','legendflex-pkg-master','export_fig',...
-    'linspecer','MIMT','tdms','Windows_API','grabit','chebfun-master',...
-    'igesToolbox','panel-2.14','PolyfitnTools',...
-    'Professional Plots','VariablePrecisionIntegers','STLRead'};
+% packages location
+package_loc = 'C:\Users\Dani\Documents\MATLAB Packages';
 
-% get home directory
-[home_dir,~,~] = fileparts(mfilename('fullpath'));
-% remove each path
-for i = 1:size(pkg_names,2)
-    rmpath(genpath(fullfile(home_dir,pkg_names{i})));
+% get all folders in directory
+packages = dir(package_loc);
+
+% remove '.' and '..'
+packages = packages(~ismember({packages.name},{'.','..'}));
+
+% add each package to path
+for i = 1:size(packages,1)
+    rmpath(genpath(fullfile(packages(i).folder,packages(i).name)));
 end
