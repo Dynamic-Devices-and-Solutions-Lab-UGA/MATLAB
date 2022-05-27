@@ -18,3 +18,6 @@ AddPackagestoPath;
 
 % set system theme - broken right now
 % System_Theme_Setup('darksteel');
+% Call Psychtoolbox-3 specific startup function:
+if exist('PsychStartup'), PsychStartup; end;
+
