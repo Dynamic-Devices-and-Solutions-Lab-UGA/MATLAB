@@ -16,5 +16,5 @@ MEX_Setup;
 % Add useful packages to path
 AddPackagestoPath;
 
-% set system theme
-System_Theme_Setup('darksteel');
+% set system theme - broken right now
+% System_Theme_Setup('darksteel');
