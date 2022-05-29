@@ -18,11 +18,9 @@ pathComps = split(current_path,';');
 for i = 1:numel(pathComps)
     % find all .class files
     javaClassFiles = dir(fullfile(char(pathComps(i)),'*.class'));
-    disp(i)
     
     if ~isempty(javaClassFiles)
         for j = 1:numel(javaClassFiles)
-            disp(j)
             javaaddpath(fullfile(javaClassFiles(j).folder,javaClassFiles(j).name));
         end
     end      
