@@ -8,8 +8,10 @@ function AddPackagestoPath
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+username = getenv('USERNAME');
+
 % packages location
-package_loc = 'C:\Users\Dani\Documents\MATLAB Packages';
+package_loc = fullfile('C:\Users',username,'Documents\MATLAB Packages');
 
 % get all folders in directory
 packages = dir(package_loc);
